@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/Home_Css/cabecalho.css">
+    <link rel="stylesheet" href="assets/CSS/formularios.css">
+    <link rel="stylesheet" href="assets/CSS/Home_Css/contato.css">
+    <link rel="stylesheet" href="assets/CSS/Home_Css/produtos.css">
+    <link rel="stylesheet" href="assets/CSS/Home_Css/rodape.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <link rel="stylesheet" href="assets/CSS/Cadastro_Produtos_Css/formulario_cadastro.css">
+    <link rel="stylesheet" href="assets/CSS/Home_Css/produtos.css">
+
+    <title>Document</title>
+</head>
+<body class="login">
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="https://marcelowallace1.github.io/E-commerce-aluraGeek-desafio-/assets/photos/Logo.svg" alt="logo">
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="Formulario">
+            <div class="formulario">
+                <h2>Adicionar Produto</h2>
+
+                <form>
+                    <div class="user-form">
+                        <input type="text" name="" required="" data-type="imagemProduto">
+                        <label>URL da imagem</label>
+                    </div>
+        
+                    <div class="user-form">
+                        <input type="text" name="" required="" data-type="Categoria">
+                        <label>Categoria</label>
+                    </div>
+
+                    <div class="user-form">
+                        <input type="text" name="" required="" data-type="nomeProduto">
+                        <label>Nome do produto</label>
+                    </div>
+
+                    <div class="user-form">
+                        <input type="text" name="" required="" data-type="precoProduto">
+                        <label>Preço do produto</label>
+                    </div>
+
+                    <div class="user-form mensagem">
+                        <textarea type="text" name="" required="" rows="6" cols="50" data-type="Descricao"></textarea>
+                        <label>Descricao Produto</label>
+                    </div>
+
+                   <button data-type="adicionar" type="button">adicionar</button> 
+                </form>
+            
+                <div class="produto" id="produtoContainer">
+                    <ul id="lista_de_produtos" data-type="Listaprodutos">
+
+                    </ul>
+                </div>
+             
+                
+
+
+            </div>
+        </section>
+    
+        <section class="contato">
+            <ul class="links_infomacoes">
+                <img src="" alt="">
+                <a href="">Quem somos nós</a>
+                <a href="">Política de Provacidade</a>
+                <a href="">Programa fidelidade</a>
+                <a href="">Nossas Lojas</a>
+                <a href="">Quero ser franqueado</a>
+                <a href="">Anuncie aqui</a>
+            </ul>
+
+            <ul class="inputs">
+                <form action="" class="formulario">
+                    <h1>Fale conosco</h1>
+
+                    <div class="form">
+                        <label>Nome</label>
+                        <input type="text" name="" required="" data-type="nome">
+                    </div>
+
+                    <div class="form mensagem">
+                        <label>Mensagem</label>
+                        <textarea type="text" name="" required="" rows="6" cols="35" data-type="mensagem"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="enviar">Enviar Mensagem</button>
+                </form>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>&copy;Desenvolcido por Sidney Daniel<br>2023</h2>
+    </footer>
+
+    <script type="module" src="assets/JS/criaTeste.js" ></script>
+    <!-- <script type="module" src="./assets/JS/criaCartãoProduto.js"></script> -->
+  
+</body>
+</html>

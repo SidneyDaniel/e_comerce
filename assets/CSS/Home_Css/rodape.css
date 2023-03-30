@@ -1,0 +1,16 @@
+:root{
+    --background:rgb(16, 75, 252);
+    --branco:#fff;
+    --preto:#000;
+    --aliceBlue:aliceBlue;
+}
+
+footer{
+    background-color: var(--background);
+    color: var(--branco);
+}
+
+footer h2{
+    font-size: 10px;
+    text-align: center;
+}

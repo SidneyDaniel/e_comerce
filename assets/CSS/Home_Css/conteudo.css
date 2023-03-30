@@ -1,0 +1,39 @@
+:root{
+    --background:rgb(0, 179, 255);
+    --branco:#fff;
+    --preto:#000;
+    --corVerTudo:#2A7AEA;
+}
+/* Titulos */
+.produtos{
+    list-style: none;
+    margin: 1rem;
+    
+}
+
+.Titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    padding: 0 5rem 0 5rem ;
+    
+}
+
+
+.Titulo .verTudo{
+    display: flex;
+    gap: 6px;
+    color: var(--corVerTudo);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:450px) {
+    .Titulo{
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+
+

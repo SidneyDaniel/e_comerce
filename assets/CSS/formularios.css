@@ -1,0 +1,129 @@
+:root{
+    --background:rgb(0, 179, 255);
+    --branco:#fff;
+    --preto:#000;
+    --aliceBlue:rgb(240, 248, 255); 
+}
+
+.Formulario{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.041);
+    margin: 2rem 0 2rem 0;
+}
+
+.Formulario form{
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+    gap: 15px;
+    margin: 8rem 0 8rem 0;
+    align-items:center ;
+}
+
+.Formulario form input{
+    padding: 0 150px 15px 0;
+}
+
+
+.formulario {
+    top: 50%;
+    left: 50%;
+    padding:  30px;
+    background: none;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0,.6);
+    border-radius: 10px;
+    z-index: 12;
+   
+}
+
+.formulario h2{
+    color: var(--preto);
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.formulario p{
+    margin: 0 0 15px 0;
+    color: var(--preto);
+    text-align: center;
+
+}
+
+.formulario form{
+   display: flex;
+   flex-direction: column;
+   
+   justify-content: center;
+   padding-top: 0px;
+}
+
+.formulario .user-form {
+    position: relative;
+    z-index: 12;
+}
+
+
+.formulario .user-form input{
+    width: 100%;
+    padding-top: 15px;
+    font-size: 16px;
+    color: var(--preto);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--preto);
+    outline: none;
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: auto !important;
+}
+
+.formulario .user-form textarea{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--preto);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--preto);
+    outline: none;
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    resize: none;
+}
+
+
+.formulario .user-form label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--preto);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.formulario .user-form input:focus ~ label,
+.formulario .user-form input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--preto);
+    font-size: 12px;
+}
+
+.formulario .user-form textarea:focus ~ label,
+.formulario .user-form textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--preto);
+    font-size: 12px;
+}

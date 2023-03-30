@@ -1,0 +1,54 @@
+:root{
+    --corTitulos:#fff;
+    --botao:rgb(0, 179, 255);
+    --backgroundcolor:#000;
+
+}
+
+
+.banner{
+    display: flex;
+  
+}
+
+.banner .banner_img{
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; 
+    max-height: 352px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(60%);
+}
+
+/* Aumentar o padding-top no porte para PC */
+.banner .overlay{
+    position: absolute;
+    color: var(--corTitulos);
+    z-index: 2;
+    display: grid;
+    padding-top: 13rem;
+    gap: 15px;
+}
+
+.banner .overlay a{
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--botao) ;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    margin-left: 1pc;
+    transition: 0.2s ease all;
+    
+}
+
+.banner .overlay a:hover{
+    color: var(--backgroundcolor);
+    background-color: var(--corTitulos) ;
+    transform: scale(1.2);
+  
+}
