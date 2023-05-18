@@ -8,6 +8,7 @@
 
 .banner{
     display: flex;
+    
   
 }
 
@@ -27,6 +28,9 @@
 /* Aumentar o padding-top no porte para PC */
 .banner .overlay{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: var(--corTitulos);
     z-index: 2;
     display: grid;

@@ -7,6 +7,9 @@
 #lista_de_produtos{
     list-style: none;
     display: flex;
+    flex-direction: column;
+    overflow: overlay;
+    max-height: 16rem;
     flex-wrap:wrap ;
     justify-content: center;
     gap: 10px;
@@ -14,13 +17,17 @@
 }
 
 #lista_de_produtos li{
-    background-color:var();
     padding: 5px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     margin-bottom: 15px;
     border-radius: 10px;
+    width: fit-content;
     color: var(--preto);
+    box-shadow:  5px 5px 10px #cecece,
+             -5px -5px 10px #f2f2f2;;
+    
 }
 
 #lista_de_produtos .produtos__nome{
@@ -37,6 +44,8 @@
 #lista_de_produtos a{
     color: var(--preto);
     transition: 0.2s ease;
+    border: 1px solid var(--background);
+    border-radius: 1rem;
 }
 
 #lista_de_produtos a:hover{
@@ -51,7 +60,7 @@
     max-width: 176px;
     max-width: 174px;
 }
-
+/* 
 @media screen and (max-width:1190px) {
     #lista_de_produtos li:nth-last-child(6){
        display: none;
@@ -68,7 +77,7 @@
     #lista_de_produtos li:nth-last-child(4){
        display: none;
     }
-}
+} */
 
 
 

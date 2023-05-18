@@ -5,7 +5,7 @@
     --aliceBlue:rgb(240, 248, 255); 
 }
 
-/* tira o flez direction colum pra pc */
+/* tira o flex direction colum pra pc */
 .contato{
     display: flex;
     flex-direction: column;
