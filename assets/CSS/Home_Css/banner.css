@@ -8,6 +8,7 @@
 
 .banner{
     display: flex;
+    
   
 }
 
@@ -27,10 +28,13 @@
 /* Aumentar o padding-top no porte para PC */
 .banner .overlay{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: var(--corTitulos);
     z-index: 2;
     display: grid;
-    padding-top: 13rem;
+    padding: 13rem 0 0 2rem;
     gap: 15px;
 }
 
@@ -38,10 +42,10 @@
     color: #fff;
     text-decoration: none;
     background-color: var(--botao) ;
+    border-radius: 0.4256em;
     padding: 5px;
-    width: 100px;
+    width: fit-content;
     height: 30px;
-    margin-left: 1pc;
     transition: 0.2s ease all;
     
 }
@@ -49,6 +53,12 @@
 .banner .overlay a:hover{
     color: var(--backgroundcolor);
     background-color: var(--corTitulos) ;
-    transform: scale(1.2);
+    letter-spacing: 2px;
+    transform: scale(1.05);
+    
   
+}
+
+.banner .overlay a:hover::after{
+    content: " ➡ ";
 }

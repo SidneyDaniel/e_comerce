@@ -8,10 +8,10 @@
 .cabecalho{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 2rem 0px; 
-      
+    padding: 1.5rem 0px; 
+    flex: 3 200px;  
 }
 
 .cabecalho .logo{
@@ -20,7 +20,7 @@
 }
 
 .cabecalho img{
-    position: absolute;
+    
     width: 152px;
     height: 52px;
     margin:16px;
@@ -37,21 +37,24 @@
 .cabecalho .busca{
     margin-left: 32px;
     padding: 8px 16px;
-    width: 393px;
+    width: 50vw;
     height: 25px;
     border-radius: 20px;
     text-align: start;
     border-color: transparent;
     background-color: aliceblue;
     font-weight: 700;
-    
-
+    outline: none;
 }
 
+.cabecalho .busca::placeholder{
+    opacity: 0.3;
+}
 
 .cabecalho .login{
     width: 120px;
     padding: 15px;
+    border-radius: 0.432em;
     border: 1px solid var(--corVerTudo);
     text-align: center;
     font-weight: 500;
@@ -109,7 +112,6 @@
         display: flex;
         justify-content: flex-end;
         padding: 15px;
-        margin-left: 50%;
     }
 
     .cabecalho img{
