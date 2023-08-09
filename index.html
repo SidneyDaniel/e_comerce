@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/CSS/Home_Css/produtos.css">
     <link rel="stylesheet" href="assets/CSS/Home_Css/rodape.css">
     <link rel="stylesheet" href="assets/CSS/Home_Css/contato.css">
+    <link rel="stylesheet" href="assets/CSS/Home_Css/banner-2.css">
     <title>Alura Geek</title>
 </head>
 <body>
@@ -36,17 +37,17 @@
         </span>
     </header>
     
+    <!-- BANNER -->
+    <section class="banner">
+        <img class="banner_img" src="https://raw.githubusercontent.com/aluralatamprofes/AluraGeek-Turma3/crud-completo/assets/banner-image.png" alt="">
+        <div class="overlay">
+            <h1>Dezembro Promocional</h1>
+            <p>Produtos selecionados com 33% de desconto</p>
+            <a href="">Ver consoles</a>
+        </div>
+        
+    </section>
     <main class="conteudo">
-        <!-- BANNER -->
-        <section class="banner">
-            <img class="banner_img" src="https://raw.githubusercontent.com/aluralatamprofes/AluraGeek-Turma3/crud-completo/assets/banner-image.png" alt="">
-            <div class="overlay">
-                <h1>Dezembro Promocional</h1>
-                <p>Produtos selecionados com 33% de desconto</p>
-                <a href="">Ver consoles</a>
-            </div>
-            
-        </section>
         
         <!-- PRODUTOS -->
         <section class="produtos">
@@ -224,12 +225,17 @@
 
         </section>
 
-        <section>
-            <div>
-
+        <section class="apresentaProdutuos">
+            <div class="banner2">
+                <img src="assets/Img/BannerB.png" alt="">
             </div>
         </section>
 
+       
+
+    </main>
+
+    <footer>
         <section class="contato">
             <ul class="links_infomacoes">
                 <img src="" alt="">
@@ -244,29 +250,50 @@
             <ul class="inputs">
                 <form action="" class="formulario">
                     <h1>Fale conosco</h1>
-
+                    
                     <div class="form">
                         <label>Nome</label>
                         <input type="text" name="" required="" data-type="nome">
                     </div>
-
+                    
                     <div class="form mensagem">
                         <label>Mensagem</label>
                         <textarea type="text" name="" required="" rows="6" cols="35" data-type="mensagem"></textarea>
                     </div>
-
+                    
                     <button type="submit" class="enviar">Enviar Mensagem</button>
                 </form>
             </ul>
+            <h2>&copy;Desenvolcido por Sidney Daniel<br>2023</h2>
 
         </section>
-
-    </main>
-
-    <footer>
-        <h2>&copy;Desenvolcido por Sidney Daniel<br>2023</h2>
     </footer>
     <!-- <script src=""></script> -->
+    <!-- <script>
+      const lista = document.querySelector("#lista_de_produtos");
+        
+        lista.addEventListener('wheel', function(event) {
+        if (event.deltaY < 0) {
+            lista.scrollBy(100, 0);
+            
+        } else {
+            lista.scrollBy(-100, 0);
+        }
+        });
+
+        lista.addEventListener('mouseover', function() {
+            window.addEventListener('wheel', preventScroll);
+        });
+
+        lista.addEventListener('mouseout', function() {
+            window.removeEventListener('wheel', preventScroll);
+        });
+
+        function preventScroll(event) {
+            event.preventDefault();
+        }
+
+    </script> -->
 </body>
 </html>
 

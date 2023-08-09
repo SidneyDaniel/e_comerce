@@ -9,11 +9,32 @@
     display: flex;
     flex-direction: column;
     overflow: overlay;
+    overflow-y: hidden;
     max-height: 16rem;
     flex-wrap:wrap ;
     justify-content: center;
     gap: 10px;
     margin-top: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-stop: always;
+}
+
+#lista_de_produtos::-webkit-scrollbar{
+    background-color: var(--branco);
+    height: 5px;
+    width: 12px;
+    
+}
+
+
+#lista_de_produtos::-webkit-scrollbar-thumb{
+    background-color: var(--background);
+
+}
+
+#lista_de_produtos::-webkit-scrollbar-track{
+    
+
 }
 
 #lista_de_produtos li{
