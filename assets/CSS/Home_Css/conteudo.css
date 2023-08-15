@@ -8,8 +8,6 @@
 .conteudo{
     display: flex;
     flex-direction: row;
-    background: rgb(103, 13, 73);
-    background: linear-gradient(59deg, rgba(103,13,73,1) 0%, rgba(16,5,18,1) 100%);
 }
 
 

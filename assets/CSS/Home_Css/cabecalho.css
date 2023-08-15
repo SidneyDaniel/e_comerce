@@ -17,6 +17,7 @@
 .cabecalho .logo{
     display: flex;
     align-items: center;
+    transform: scale(2.5);
 }
 
 .cabecalho img{

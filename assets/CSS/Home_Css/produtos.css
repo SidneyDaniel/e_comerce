@@ -46,9 +46,7 @@
     border-radius: 10px;
     width: fit-content;
     color: var(--preto);
-    box-shadow:  5px 5px 10px #cecece,
-             -5px -5px 10px #f2f2f2;;
-    
+    border: 1px solid #000;
 }
 
 #lista_de_produtos .produtos__nome{
